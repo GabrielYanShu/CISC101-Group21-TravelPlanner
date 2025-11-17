@@ -1,3 +1,5 @@
+Change Log (2025-11-05): – Updated distance rule to support ‘short walks only’ preference.
+
 Apply these **if/else** checks to make sure plans are realistic and adapt to edge cases:
 
 1. **Closed Venue**
@@ -9,25 +11,29 @@ Apply these **if/else** checks to make sure plans are realistic and adapt to edg
    - If meal cost > user’s budget → switch to a cheaper restaurant of similar cuisine.
 
 3. **Too Far or Long Travel**
-   
+
    - If transfer between activities > 25 min or > 5 km → pick a closer alternative or add a short transit hop.
 
-4. **Weather Swap**
+5. **Weather Swap**
    
    - If rain or cold season likely → make sure at least one indoor activity replaces outdoor ones.
 
-5. **Time Overrun**
+6. **Time Overrun**
    
    - If total planned time > available hours → shorten lunch or pick a nearer stop.
 
-6. **Mobility Needs**
+7. **Mobility Needs**
    
    - If mobility limits noted → choose step-free, short-walk options and include breaks.
 
-7. **Dietary Needs**
+8. **Dietary Needs**
    
    - If user is vegan or has dietary constraints → ensure all meals match or swap with compliant ones.
 
-8. **Bookings**
+9. **Bookings**
    
    - If activity usually needs a ticket → just remind the user to book it; never simulate bookings.
+  
+10. **Distance**
+
+   - If a user says "short walks only" prioritize travel distances are < 25 minutes
