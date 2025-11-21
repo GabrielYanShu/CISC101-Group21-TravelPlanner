@@ -1,0 +1,6 @@
+"Overall, we learnt how to effectively use Git and the intricacies that come with it. We learnt about system prompts, instructions on how
+the program should be run, reference files, which are similar to system prompts in that they contain instructions on how the program 
+should run, and the purpose of GitHub. Despite the description, System Prompts and Reference Files are not lines of code, per se, since 
+their instructions can be as simple as “store internally in JSON format”, which is not traditional code. GitHub, meanwhile, is a platform 
+used to collaborate on Git projects and to share them across the web, as well as a repository for projects saved to a cloud or common 
+server (not localized to the user’s desktop)."
